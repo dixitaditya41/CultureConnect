@@ -1,0 +1,145 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#cultural-stories {
+  text-align: center;
+}
+
+#cultural-stories h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.stories-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.story-card {
+  position: relative;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  max-width: 300px;
+  width: 100%;
+}
+
+.story-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.story-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.story-card h3 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.story-content {
+  margin-bottom: 10px;
+}
+
+.read-more {
+  color: #007bff;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #273e5a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #9b9fa2;
+}
+
+button + button {
+  background-color: #dc3545;
+}
+
+button + button:hover {
+  background-color: #c82333;
+}
+
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.form-wrapper {
+  position: relative;
+  background: #da9d9d;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1001;
+  width: 90%;
+  max-width: 500px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+ 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
