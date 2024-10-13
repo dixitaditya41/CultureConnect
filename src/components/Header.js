@@ -1,0 +1,26 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import img from './Culture Connect (3)_processed.png';
+
+const Header = () => {
+  return (
+    <div className=''> 
+    <nav className=' flex flex-row  justify-center items-center p-1 text-white  rounded-lg '>
+      <div className="w-[97px]">
+        <img className="object-contain h-full" src={img} alt="CultureConnect" />
+      </div>
+
+      <div className=''>
+        <ul className="flex space-x-4">
+          <li className='hover:text-orange-500'><Link to="/">Cultures</Link></li>
+          <li className='hover:text-orange-500'><Link to="/virtual-tour">Virtual Tour</Link></li>
+          <li className='hover:text-orange-500'><Link to="/language-practice">Language Practice</Link></li>
+          <li className='hover:text-orange-500'><Link to="/cultural-stories">Cultural Stories</Link></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  );
+};
+
+export default Header;
