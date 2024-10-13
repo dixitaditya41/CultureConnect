@@ -37,11 +37,11 @@ export default function Home() {
     },
     {
       imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImnBp-41mfmYWw6oeMMIqDFSeFkKH25u1gA&s",
-      title: "Cultural Stories",
+      title: "Local Artisans",
       description: "Read and share cultural stories from different regions, and connect with others."
     }, {
       imgSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTImnBp-41mfmYWw6oeMMIqDFSeFkKH25u1gA&s",
-      title: "Cultural Stories",
+      title: "Cultural Shows",
       description: "Read and share cultural stories from different regions, and connect with others."
     }, 
     // Add more feature objects if needed

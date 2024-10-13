@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import img from './Culture Connect (3)_processed.png';
+import img from '../assests/logo.png';
 
 const Header = () => {
   return (
@@ -12,10 +12,11 @@ const Header = () => {
 
       <div className=''>
         <ul className="flex space-x-4">
-          <li className='hover:text-orange-500'><Link to="/">Cultures</Link></li>
           <li className='hover:text-orange-500'><Link to="/virtual-tour">Virtual Tour</Link></li>
           <li className='hover:text-orange-500'><Link to="/language-practice">Language Practice</Link></li>
           <li className='hover:text-orange-500'><Link to="/cultural-stories">Cultural Stories</Link></li>
+          <li className='hover:text-orange-500'><Link to="/cultural-stories">Cultural Shows</Link></li>
+          <li className='hover:text-orange-500'><Link to="/cultural-stories">Shop</Link></li>
         </ul>
       </div>
     </nav>
