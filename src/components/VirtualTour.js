@@ -133,7 +133,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './VirtualTour.css';
-import './Brazil.js';
+import '../Pages/Brazil.js';
 
 const VirtualTour = () => {
   useEffect(() => {
@@ -145,7 +145,7 @@ const VirtualTour = () => {
 
   function scrambleText(element, newText, duration, scrambleSpeed) {
     const oldText = element.textContent;
-    const maxLength = Math.max(oldText.length, newText.length);
+    //const maxLength = Math.max(oldText.length, newText.length);
     const scrambleChars = 'Wanna Explore the World?';
     
     let scrambleInterval;
