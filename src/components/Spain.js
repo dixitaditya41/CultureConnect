@@ -4,7 +4,7 @@ const Spain = () => {
   return (
     <div>
       <header>
-        <h1>Spain</h1>
+        <h1>Spainnn</h1>
       </header>
       <main>
         <h2>Spain</h2>
