@@ -2,10 +2,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
+import ExploreIndia from './components/ExploreIndia';
 import VirtualTour from './components/VirtualTour';
 import LanguagePractice from './components/LanguagePractice';
 import CulturalStories from './components/CulturalStories';
-import Brazil from './Pages/Brazil';
+import Brazil from './components/Brazil';
 import India from './components/India';
 import Italy from './components/Italy';
 import Spain from './components/Spain';
@@ -29,7 +30,7 @@ function App() {
       <div className='relative z-10 w-full h-full'>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/virtual-tour" element={<VirtualTour />} />
+          <Route path="/virtual-tour" element={<ExploreIndia/>} />
           <Route path="/language-practice" element={<LanguagePractice />} />
           <Route path="/cultural-stories" element={<CulturalStories />} />
           <Route path="/brazil" element={<Brazil/>} />
