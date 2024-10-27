@@ -178,7 +178,8 @@ footer {
   font-size: 2.5rem;
   text-align: center;
   margin: 30px 0;
-  background: linear-gradient(90deg, #7e4104, #cac8c8, #074202); /* Saffron, White, Green */
+  background: black;
+  /* linear-gradient(90deg, #532a02, #cac8c8, #072c04); Saffron, White, Green */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.4px #181717; 
@@ -237,6 +238,13 @@ footer {
   gap: 20px;
   padding: 50px;
 }
+/* .state-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 50px;
+} */
+
 
 .state-card {
   background-color: #edebeb;
@@ -267,7 +275,7 @@ footer {
 
 .state-card p {
   font-size: 0.9rem;
-  color: #d4d4d4;
+  color: #6c6a6a;
 }
 
 footer {
@@ -276,4 +284,368 @@ footer {
   background-color: #1a1a1a;
   color: #d4d4d4;
   margin-top: 40px;
+}
+
+
+/* Responsive .slider-item */
+.slider-item img {
+  width: 100%;
+  max-height: 700px; /* Adjust to ensure compatibility with smaller screens */
+  object-fit: cover;
+}
+
+/* Responsive Design for State Cards */
+@media screen and (max-width: 768px) {
+  .state-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .state-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ExploreIndia.css */
+
+.navbar {
+  background-color: rgb(245, 244, 244);
+  color: black;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #141313;
+  background-color: rgb(245, 244, 244);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.navbar .search-container {
+  float: right;
+}
+
+.navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  background-color: #ccc;
+}
+
+.navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #4b4949;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}
+
+/* Additional styling for content alignment */
+.explore-body {
+  padding-top: 50px; /* Ensure content is not hidden behind the navbar */
+}
+
+
+/* Existing styles remain the same */
+
+/* Festivals Section */
+/* .festivals-section {
+  margin-top: 60px;
+}
+
+.festival-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.festivals-flow {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px 50px;
+}
+
+.festival-item {
+  position: relative;
+  min-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.festival-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.festival-item:hover {
+  transform: scale(1.05);
+}
+
+.festival-text {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.festival-text h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.festival-text p {
+  font-size: 1rem;
+} */
+/* .view-all-states-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.view-all-states {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.view-all-states:hover {
+  transform: scale(1.1);
+}
+
+.view-all-states p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}  */
+
+
+
+
+.view-all-states-section {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.view-all-states-link {
+  text-decoration: none;
+}
+
+.view-all-states {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.feather-arrow-right-circle {
+  transition: transform 0.3s;
+}
+
+.view-all-states:hover .feather-arrow-right-circle {
+  transform: translateX(10px); /* Move arrow slightly on hover */
+}
+
+
+
+
+
+
+
+/* .festival-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+ 
+}
+
+.slider-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.prev-arrow {
+  left: 0;
+}
+
+.next-arrow {
+  right: 0;
+}
+
+.festivals-slider {
+  width: 50%;
+  
+  display: flex;
+  justify-content: center;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+.slider-text {
+  margin-top: 10px;
+} */
+
+
+
+/* .festivals-section {
+  margin-top: 60px;
+}
+
+.festival-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.festival-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 400px; 
+}
+
+.slider-arrow {
+  background: none;
+  color: white;
+  background-color: #0a0707;
+  border: none;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  top: 50%; 
+  transform: translateY(-50%); 
+}
+
+.prev-arrow {
+  left: 10px; 
+}
+
+.next-arrow {
+  right: 10px; 
+
+.festivals-slider {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 100%; 
+}
+
+.slider-item-f {
+  text-align: center;
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider-item-f img {
+  max-height: 350px; 
+  width: auto;
+  max-width: 100%; 
+  margin: 0 auto; 
+  border-radius: 2%;
+}
+
+.slider-text-f {
+  margin-top: 10px;
+  height: auto; 
+  background-color: #130101;
+  color: rgb(181, 172, 172);
+ 
+} */
+
+.festival-header {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.festival-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.festival-cards {
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.festival-card {
+  flex: 1 1 30%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.festival-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+
+.arrow-circle {
+  display: inline-block;
+}
+
+.arrow-circle svg {
+  stroke: #333;
+}
+
+.arrow-circle:hover svg {
+  stroke: #ff6b6b;
 }
