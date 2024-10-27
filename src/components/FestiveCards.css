@@ -1,0 +1,33 @@
+/* FestiveCards.css */
+.festive-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .festive-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .festive-image {
+    width: 100%;
+    height: 200px; /* Adjust as necessary */
+    object-fit: cover;
+  }
+  
+  .festive-content {
+    padding: 15px;
+  }
+  
+  .festive-content h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+  }
+  
+  .festive-content p {
+    color: #555;
+  }
+  
+  
