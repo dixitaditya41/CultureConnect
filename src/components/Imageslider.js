@@ -4,7 +4,6 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import { ChevronRight, ChevronLeft, ExternalLink } from 'lucide-react';
 import 'swiper/css';
 
-
 const ImageSlider = ({ cards }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
