@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "framer-motion": "^11.11.9",
+    "gatsby-plugin-image": "^3.13.1",
     "gsap": "^3.12.5",
     "lucide-react": "^0.453.0",
     "mongoose": "^8.5.3",
