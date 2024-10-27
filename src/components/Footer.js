@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Copyright section */}
         <div className="mt-2 border-t border-gray-800 pt-6 text-center text-sm">
           <p>&copy; 2024 CultureConnect. All rights reserved.</p>
-          <p className="mt-1 text-gray-400">Designed by Isha Shukla</p>
+          {/* <p className="mt-1 text-gray-400">Designed by Isha Shukla</p> */}
         </div>
       
     </footer>
