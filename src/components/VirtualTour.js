@@ -133,7 +133,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './VirtualTour.css';
-import '../Pages/Brazil.js';
+import './Brazil.js';
 
 const VirtualTour = () => {
   useEffect(() => {
