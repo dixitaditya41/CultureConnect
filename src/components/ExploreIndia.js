@@ -1412,7 +1412,9 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
+import ArtGallery from './ArtGallery'; 
 import Footer from './Footer';
 import './ExploreIndia.css';
 import State from './State';
@@ -1510,7 +1512,14 @@ const ExploreIndia = () => {
 
   return (
     <div className='explore-body'>
-      <Navbar />
+     <div>
+     <Navbar />
+      
+      <Routes>
+        <Route path="/art-gallery" element={<ArtGallery />} />
+        
+      </Routes> 
+      </div>
       
       <section id="explore-india">
   <h2 id="header-text">Explore India</h2>

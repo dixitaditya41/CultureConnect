@@ -18,7 +18,8 @@ const Navbar = () => {
       <Link to="/about">Places</Link>
       <Link to="/about">Museums</Link>
       <Link to="/about">Events</Link>
-      <Link to="/about">Art gallery</Link>
+      <Link to="/art-gallery">Art Gallery</Link>
+ 
       {/* <Link to="/about">About</Link> */}
       {/* <Link to="/contact">Contact</Link> */}
       
